@@ -4,11 +4,12 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-servers',
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
-  // styles : ['h3 { color: red; }'] //alternative inline style
+
 })
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No Server was created yet!"
+  serverName = '';
 
 
 
@@ -23,6 +24,11 @@ export class ServersComponent implements OnInit {
 
   onCreateServer(){
     this.serverCreationStatus = "Server was created!"
+  }
+
+  onUpdateServerName(event: any){
+  this.serverName = (<HTMLInputElement>event.target).value;
+
   }
 
 }
