@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-servers',
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
+  // styles : ['h3 { color: red; }'] //alternative inline style
 })
 export class ServersComponent implements OnInit {
 
