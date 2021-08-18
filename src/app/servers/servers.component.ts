@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   // styles : ['h3 { color: red; }'] //alternative inline style
 })
 export class ServersComponent implements OnInit {
+  allowNewServer = false;
 
   constructor() { }
 
